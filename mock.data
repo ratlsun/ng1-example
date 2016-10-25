@@ -1,0 +1,102 @@
+//api数据，已经在 <http://mock-api.com/#!/mocker-viewer?mid=245> 上面配置了模拟数据
+
+//GET http://mock-api.com/tyUDmzRMOzBnzzCa.mock/api/allfunds.do 
+[
+  {
+    "id": 1,
+    "name": "小黑基金",
+    "desc": "Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.",
+    "icon": "apple",
+    "type": "info",
+    "trend": {
+      "labels": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July"
+      ],
+      "data": [
+        [
+          40.0,
+          59.0,
+          80.0,
+          81.0,
+          56.0,
+          55.0,
+          65.0
+        ]
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "黑尔基金",
+    "desc": "Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.",
+    "icon": "education",
+    "type": "warning",
+    "trend": {
+      "labels": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July"
+      ],
+      "data": [
+        [
+          55.3,
+          23.0,
+          44.0,
+          23.0,
+          56.1,
+          55.0,
+          32.3
+        ]
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "name": "白胖基金",
+    "desc": "Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.",
+    "icon": "piggy-bank",
+    "type": "danger",
+    "trend": {
+      "labels": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July"
+      ],
+      "data": [
+        [
+          40.5,
+          59.3,
+          22.0,
+          44.0,
+          23.0,
+          55.5,
+          71.2
+        ]
+      ]
+    }
+  }
+]
+
+//POST http://mock-api.com/tyUDmzRMOzBnzzCa.mock/api/buyfund.do
+{"result":0}
+
+//POST http://mock-api.com/tyUDmzRMOzBnzzCa.mock/api/commentfund.do
+{"result":0}
+
+//GET http://mock-api.com/tyUDmzRMOzBnzzCa.mock/api/allfundmessages.do
+//随机返回空的数组或者，长度为1或者2的字符串数组
+

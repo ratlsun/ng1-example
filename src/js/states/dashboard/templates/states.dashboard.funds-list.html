@@ -1,0 +1,17 @@
+<div>
+    <div ng-repeat="fund in funds" class="blockquote-box blockquote-{{fund.type}} clearfix">
+        <div class="btn square pull-left" ng-click="selectFund(fund)">
+            <span class="glyphicon glyphicon-{{fund.icon}} glyphicon-lg"></span>
+        </div>
+        <h4>{{fund.name}}</h4>
+        <p>{{fund.desc}}&nbsp;——&nbsp;<a ng-click="buy(fund)">BUY NOW</a></p>
+        <div class="comment-form" ng-if="fund.id === selectedFund.id">
+            <div class="form-group">
+                <label for="comment">Your Comment</label>
+                <textarea id="comment" class="form-control" rows="3" ng-model="fund.newComment"></textarea>
+            </div>
+            <button class="btn btn-default" ng-click="comment(fund)">Send</button>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,181 @@
+.glyphicon-lg{font-size:3em}
+.blockquote-box{border-right:5px solid #E6E6E6;margin-bottom:25px}
+.blockquote-box .square{width:100px;min-height:50px;margin-right:22px;text-align:center!important;background-color:#E6E6E6;padding:20px 0}
+.blockquote-box.blockquote-primary{border-color:#357EBD}
+.blockquote-box.blockquote-primary .square{background-color:#428BCA;color:#FFF}
+.blockquote-box.blockquote-success{border-color:#4CAE4C}
+.blockquote-box.blockquote-success .square{background-color:#5CB85C;color:#FFF}
+.blockquote-box.blockquote-info{border-color:#46B8DA}
+.blockquote-box.blockquote-info .square{background-color:#5BC0DE;color:#FFF}
+.blockquote-box.blockquote-warning{border-color:#EEA236}
+.blockquote-box.blockquote-warning .square{background-color:#F0AD4E;color:#FFF}
+.blockquote-box.blockquote-danger{border-color:#D43F3A}
+.blockquote-box.blockquote-danger .square{background-color:#D9534F;color:#FFF}
+
+/*-- BS3 Modified Classes --*/
+.panel {
+    border: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.panel-body {
+    padding: 20px;
+}
+.panel-heading {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.panel-footer {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.comment-form {
+    padding: 10px 20px 10px 120px;
+}
+
+
+/*-- Common Use Classes --*/
+.btn-ui {
+    background-color: #E55F3A;
+    border-color: #C54A28;
+    color: #fff;
+}
+.btn-ui:hover {
+    background-color: #E0624C;
+    color: #fff;
+}
+.list-block {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+.list-block ul {
+    display: table-row;
+}
+.list-block li {
+    display: table-cell;
+    margin: 0;
+}
+.pad-left-0 {
+    padding-left: 0px;
+}
+.pad-right-0 {
+    padding-right: 0px;
+}
+.mrg-btm-10 {
+    margin-bottom: 10px;
+}
+.mrg-btm-20 {
+    margin-bottom: 20px;
+}
+
+/*-- Profile Widget --*/
+#profile-widget .panel-heading {
+    background-color: #F8F3F0;
+    color: #64584C;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+#profile-widget .panel-heading .label.red {
+    background-color: #E56E4C;
+    color: #64584C;
+    padding: 5px;
+}
+#profile-widget .panel-heading .label.green {
+    background-color: #55BC75;
+    color: #64584C;
+    padding: 5px;
+}
+#profile-widget .media-heading {
+    color: #5B5147;
+}
+#profile-widget .panel-body {
+    padding: 20px;
+}
+#profile-widget .panel-body .img-circle {
+    height: 90px;
+    width: 90px;
+    padding: 8px;
+    border: 1px solid #e2dfdc;
+}
+#profile-widget .panel-footer {
+    padding: 0px;
+    border: none;
+}
+#profile-widget .panel-footer .btn-group .btn {
+    border: none;
+    font-size: 1.2em;
+    background-color: #F6F1ED;
+    color: #BAACA3;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding: 15px 0;
+}
+#profile-widget .panel-footer .btn-group .btn:hover {
+    color: #F6F1ED;
+    background-color: #8F7F70;
+}
+#profile-widget .panel-footer .btn-group>.btn:not(:first-child) {
+    border-left: 1px solid #fff;
+}
+#profile-widget .panel-footer .btn-group .highlight {
+    color: #E56E4C;
+}
+
+#myLineChart {
+    background-color: #F8F3F0;
+    padding: 0px 5px;
+    margin: 0px;
+    width: 100%;
+}
+
+/*-- Navigation Widget --*/
+#nav-widget {
+    border: 0px;
+    margin-bottom:20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+#nav-widget .btn-group:not(:first-child) {
+    border-left: 1px solid #F5F0EC;
+}
+#nav-widget .btn{
+    background-color: #fff;
+    border: 0px;
+    padding: 20px;
+    font-weight: 600;
+    border-bottom: 3px solid #fff;
+}
+#nav-widget .btn.active {
+    background-color: #F8F3F0;
+    color: #64584C;
+    border-bottom: 3px solid #55BC75;
+}
+#nav-widget .glyphicon {
+    padding-right: 5px;
+}
+#nav-widget .badge {
+    font-size: .7em;
+    background-color: #E7663F;
+    margin-left:4px;
+    top: -10px;
+}
+
+/*-- Login Widget --*/
+#login-widget .panel-body .input-group {
+    margin-bottom: 15px;
+}
+#login-widget .panel-footer {
+    padding: 0px;
+    border: none;
+}
+#login-widget .panel-footer .login-btn {
+    padding: 20px 20px 10px 20px;
+}
+#login-widget .panel-footer .facebook {
+    background-color: #5F90B0;
+    color: #fff;
+    padding: 15px;
+    display: block;
+}

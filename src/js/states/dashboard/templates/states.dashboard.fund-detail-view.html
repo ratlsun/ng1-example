@@ -1,0 +1,36 @@
+<div>
+    <div id="profile-widget" class="panel">
+        <div class="panel-heading">
+            <h4 class="text-uppercase"><strong>{{selectedFund.name}}</strong>
+                <span class="label pull-right" ng-class="diff >= 0 ? 'red' : 'green'">
+                    <span class="glyphicon" ng-class="diff >= 0 ? 'glyphicon-plus' : 'glyphicon-minus'"></span>
+                    {{diff >= 0 ? diff : -diff | number:2}}({{diff >= 0 ? diffPercent : -diffPercent | number:2}}%)
+                </span>
+            </h4>
+        </div>
+        <canvas id="myLineChart" class="chart chart-line"
+                chart-data="selectedFund.trend.data"
+                chart-labels="selectedFund.trend.labels"></canvas>
+        <div class="panel-footer">
+            <div class="btn-group btn-group-justified">
+                <a class="btn btn-default" role="button">
+                    <span class="glyphicon glyphicon-eye-open"></span> 172</a>
+                <a class="btn btn-default" role="button">
+                    <span class="glyphicon glyphicon-shopping-cart"></span> 34</a>
+                <a class="btn btn-default highlight" role="button">
+                    <span class="glyphicon glyphicon-heart"></span>210</a>
+            </div>
+        </div>
+        <div class="panel-body" ng-repeat="comment in selectedFund.comments">
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object img-circle" src="images/fj.jpg">
+                </a>
+                <div class="media-body">
+                    <h2 class="media-heading">Hale</h2>
+                    {{comment}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

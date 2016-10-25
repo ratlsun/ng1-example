@@ -1,0 +1,25 @@
+{
+    "name": "hale-angular-example",
+    "authors": [
+        "Hale@Agilean.cn"
+    ],
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "~1.5",
+        "angular-ui-router": "^0.2.0",
+        "restangular": "~1.5",
+        "lodash": "~4",
+        "bootstrap": "~3",
+        "angular-chart.js": "^0.10.0",
+        "ng-dialog": "^0.6.0"
+    },
+    "devDependencies": {
+    }
+}

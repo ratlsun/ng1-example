@@ -1,0 +1,44 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <app-header></app-header>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4 col-xs-offset-4">
+            <div id="login-widget" class="panel" >
+                <div id="loginform" class="form-horizontal" role="form">
+                    <div class="panel-heading text-center">
+                        <h5 class="text-uppercase"><strong>基金申购</strong></h5>
+                    </div>
+                    <div class="panel-body">
+                        <label for="login-fund">基金:</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                            <select id="login-fund" class="form-control input-lg" ng-model="shoppingForm.fundId">
+                                <option ng-repeat="fund in funds" value="{{fund.id}}">{{fund.name}}</option>
+                            </select>
+                        </div>
+                        <label for="login-number">份数:</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                            <input id="login-number" type="number" class="form-control input-lg" ng-model="shoppingForm.number">
+                        </div>
+                        <label for="login-password">支付密码:</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input id="login-password" type="password" class="form-control input-lg" placeholder="password" ng-model="shoppingForm.password">
+                        </div>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <div class="login-btn" ng-click="submitShopping()">
+                            <button class="btn btn-ui btn-lg btn-block mrg-btm-10">申  购</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
