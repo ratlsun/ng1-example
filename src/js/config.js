@@ -19,7 +19,8 @@
 
             states: {
                 dashboard: "dashboard",
-                shopping: "shopping"
+                shopping: "shopping",
+                stats: "stats"
             },
 
             messageFetcher: {

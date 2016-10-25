@@ -17,7 +17,7 @@
         "restangular": "~1.5",
         "lodash": "~4",
         "bootstrap": "~3",
-        "angular-chart.js": "^0.10.0",
+        "angular-chart.js": "~1",
         "ng-dialog": "^0.6.0"
     },
     "devDependencies": {

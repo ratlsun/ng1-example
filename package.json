@@ -1,9 +1,12 @@
 {
   "name": "hale-angular-example.builder",
   "version": "0.0.1",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
   "dependencies": {},
   "devDependencies": {
-
     "gulp": "~3",
     "gulp-concat": "~2",
     "gulp-angular-templatecache": "~1",
@@ -13,6 +16,8 @@
     "lodash": "~4",
     "path": "~0.12",
     "streamqueue": "~1",
-    "del": "~2"
+    "del": "~2",
+
+    "lite-server": "~2"
   }
 }

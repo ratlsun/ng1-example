@@ -16,15 +16,17 @@
         </button>
     </div>
     <div class="btn-group">
-        <button type="button" class="btn text-uppercase">
-            <span class="glyphicon glyphicon-bell glyphicon-lg"></span>
-            Message<span class="badge" ng-show="messages.length > 0">{{messages.length}}</span>
+        <button type="button" class="btn text-uppercase"
+                ng-class="{'active': activeMenu==='stats'}"
+                ng-click="gotoStats()">
+            <span class="glyphicon glyphicon-qrcode glyphicon-lg"></span>
+            Statistics
         </button>
     </div>
     <div class="btn-group">
         <button type="button" class="btn text-uppercase">
-            <span class="glyphicon glyphicon-qrcode glyphicon-lg"></span>
-            Follow Us
+            <span class="glyphicon glyphicon-bell glyphicon-lg"></span>
+            Message<span class="badge" ng-show="messages.length > 0">{{messages.length}}</span>
         </button>
     </div>
 </div>

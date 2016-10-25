@@ -57,7 +57,7 @@ gulp.task('clean', function (cb) {
 gulp.task('dev:lib-js', function () {
     var jsLib = _.map([
         'lodash/lodash.js',
-        'Chart.js/Chart.js',
+        'chart.js/dist/Chart.bundle.js',
 
         //NG-libs
         'angular/angular.js',
@@ -76,7 +76,7 @@ gulp.task('dev:lib-js', function () {
 gulp.task('prod:lib-js', function () {
     var jsLib = _.map([
         'lodash/lodash.js',
-        'Chart.js/Chart.js'
+        'chart.js/dist/Chart.bundle.js'
     ], function(sPath) {
         return path.join(libPath, sPath);
     });

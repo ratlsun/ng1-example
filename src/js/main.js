@@ -43,6 +43,10 @@
                 url: '/shopping?fid',
                 templateUrl: 'states.shopping.main.html',
                 controller: 'states.shopping.MainController'
+            }).state(appConfig.states.stats, {
+                url: '/stats',
+                templateUrl: 'states.stats.main.html',
+                controller: 'states.stats.MainController'
             });
         }
     ]);

@@ -19,6 +19,10 @@
                     $state.go(appConfig.states.shopping);
                 };
 
+                $scope.gotoStats = function () {
+                    $state.go(appConfig.states.stats);
+                };
+
                 $scope.messageListener = $interval(function(){
                     fundService.getFundMessages().then(function(resp) {
                         $scope.messages = resp;
