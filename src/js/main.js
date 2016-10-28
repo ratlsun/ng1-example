@@ -19,8 +19,9 @@
         '$urlRouterProvider',
         '$locationProvider',
         'RestangularProvider',
+        'ChartJsProvider',
         'appConfig',
-        function ($stateProvider, $urlRouterProvider, $locationProvider, RestangularProvider, appConfig) {
+        function ($stateProvider, $urlRouterProvider, $locationProvider, RestangularProvider, ChartJsProvider, appConfig) {
 
             var serverProfile = appConfig.profiles[appConfig.profiles.active];
             RestangularProvider.setDefaultHeaders({'Content-Type': 'application/json;charset=UTF-8'});
@@ -48,6 +49,10 @@
                 templateUrl: 'states.stats.main.html',
                 controller: 'states.stats.MainController'
             });
+
+            ChartJsProvider.setOptions({
+                responsive: false
+            })
         }
     ]);
 

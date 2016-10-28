@@ -23,11 +23,11 @@
                     $state.go(appConfig.states.stats);
                 };
 
-                $scope.messageListener = $interval(function(){
+                /*$scope.messageListener = $interval(function(){
                     fundService.getFundMessages().then(function(resp) {
                         $scope.messages = resp;
                     });
-                }, appConfig.messageFetcher.intervalTimeMs);
+                }, appConfig.messageFetcher.intervalTimeMs);*/
 
                 $scope.$on('$destroy', function() {
                     $interval.cancel($scope.messageListener);

@@ -34,6 +34,13 @@
                             streamId: streamId,
                             stepIds: stepIds
                         }, 'cfd');
+                    },
+
+                    getFinishedUnitCountsByPeriod: function (boardId, streamId) {
+                        return config().all('stats').customGET('throughput', {
+                            bid: boardId,
+                            sid: streamId
+                        });
                     }
                 };
             }]);
