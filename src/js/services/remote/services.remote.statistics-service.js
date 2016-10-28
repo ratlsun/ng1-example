@@ -28,6 +28,13 @@
                         });
                     },
 
+                    getAllLeadTimesByDateLabel: function (boardId, streamId) {
+                        return config().all('stats').customGET('cd-label', {
+                            bid: boardId,
+                            sid: streamId
+                        });
+                    },
+
                     getFinishedUnitCountsByDate: function (boardId, streamId, stepIds) {
                         return config().all('stats').customPOST({
                             boardId: boardId,
